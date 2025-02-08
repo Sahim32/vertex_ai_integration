@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1016807347125",
+    "project_id": "vertexaiapp-636ab",
+    "storage_bucket": "vertexaiapp-636ab.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016807347125:android:29e98db395adfd40b0bffc",
+        "android_client_info": {
+          "package_name": "com.example.vertex_ai_integration"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzuUri1EkdSVqXPSx3s_BGGlZEMgDnIB8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016807347125:android:b5da905349f6d2a9b0bffc",
+        "android_client_info": {
+          "package_name": "com.example.vertexai_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzuUri1EkdSVqXPSx3s_BGGlZEMgDnIB8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
