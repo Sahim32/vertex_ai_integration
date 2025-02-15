@@ -16,21 +16,26 @@ void main() async {
 }
 
 class MyApp extends StatefulWidget {
-  MyApp({super.key});
+  const MyApp({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _MyAppState createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
   String result= 'No content generated yet';
-  final prompt_text = 'Write a story about a magic backpack';
+  final promptText = 'Write a story about a magic backpack';
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      
       home: Scaffold(
-        appBar: AppBar(title: Text('Generative AI with Firebase')),
+      
+        backgroundColor: Colors.deepPurple[300],
+        appBar: AppBar(title: Text('Generative AI with Firebase',style: TextStyle(color: Colors.white),),backgroundColor: Colors.deepPurple,),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -47,11 +52,11 @@ class _MyAppState extends State<MyApp> {
                Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Text(
-                  'Content: $prompt_text ...\n\n$result',
+                  'Prompt: $promptText ...\n\n$result',
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w600,
-                    color: Colors.grey[500],
+                    color: Colors.white,
                     fontStyle: FontStyle.italic,
                   ),
                   textAlign: TextAlign.center,
