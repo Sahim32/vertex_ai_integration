@@ -24,7 +24,7 @@ migrate_working_dir/
 .vscode/
 
 # Ignore environment variable files
-.env
+.env/
 
 # Flutter/Dart/Pub related
 **/doc/api/
