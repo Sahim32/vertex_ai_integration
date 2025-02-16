@@ -4,6 +4,7 @@ import 'package:firebase_vertexai/firebase_vertexai.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:vertex_ai_integration/firebase_options.dart';
 
 
 void main() async {
@@ -17,7 +18,8 @@ void main() async {
   }
    
   await Firebase.initializeApp(
-   // options: DefaultFirebaseOptions.currentPlatform,
+    name: 'vertex_ai_integration',
+    options: DefaultFirebaseOptions.currentPlatform,
   );
   await FirebaseAuth.instance.signInAnonymously();
 
